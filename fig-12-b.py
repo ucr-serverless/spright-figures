@@ -40,12 +40,12 @@ with open(fileName_kn[0]) as fp:
       aggregated_cpu_1_second = sum(tmp_cpu)
       kn_queue_cpu_ts.append(aggregated_cpu_1_second)
       break
-    if line_list[1] == 'UID':
+    if line_list[2] == 'UID':
       aggregated_cpu_1_second = sum(tmp_cpu)
       kn_queue_cpu_ts.append(aggregated_cpu_1_second)
       tmp_cpu = [0]
     else:
-      tmp_cpu.append(float(line_list[7]))
+      tmp_cpu.append(float(line_list[8]))
     line = fp.readline()
     line_list= line.split()
     # print(tmp_cpu)
@@ -70,12 +70,12 @@ with open(fileName_kn[1]) as fp:
       aggregated_cpu_1_second = sum(tmp_cpu)
       kn_gw_cpu_ts.append(aggregated_cpu_1_second)
       break
-    if line_list[1] == 'UID':
+    if line_list[2] == 'UID':
       aggregated_cpu_1_second = sum(tmp_cpu)
       kn_gw_cpu_ts.append(aggregated_cpu_1_second)
       tmp_cpu = [0]
     else:
-      tmp_cpu.append(float(line_list[7]))
+      tmp_cpu.append(float(line_list[8]))
     line = fp.readline()
     line_list= line.split()
     # print(tmp_cpu)
@@ -100,12 +100,12 @@ with open(fileName_kn[2]) as fp:
       aggregated_cpu_1_second = sum(tmp_cpu)
       kn_fn_cpu_ts.append(aggregated_cpu_1_second)
       break
-    if line_list[1] == 'UID':
+    if line_list[2] == 'UID':
       aggregated_cpu_1_second = sum(tmp_cpu)
       kn_fn_cpu_ts.append(aggregated_cpu_1_second)
       tmp_cpu = [0]
     else:
-      tmp_cpu.append(float(line_list[7]))
+      tmp_cpu.append(float(line_list[8]))
     line = fp.readline()
     line_list= line.split()
     # print(tmp_cpu)
@@ -130,12 +130,12 @@ with open(fileName_skmsg[0]) as fp:
       aggregated_cpu_1_second = sum(tmp_cpu)
       skmsg_gw_cpu_ts.append(aggregated_cpu_1_second)
       break
-    if line_list[1] == 'UID':
+    if line_list[2] == 'UID':
       aggregated_cpu_1_second = sum(tmp_cpu)
       skmsg_gw_cpu_ts.append(aggregated_cpu_1_second)
       tmp_cpu = [0]
     else:
-      tmp_cpu.append(float(line_list[7]))
+      tmp_cpu.append(float(line_list[8]))
     line = fp.readline()
     line_list= line.split()
     # print(tmp_cpu)
@@ -160,12 +160,12 @@ with open(fileName_skmsg[1]) as fp:
       aggregated_cpu_1_second = sum(tmp_cpu)
       skmsg_fn_cpu_ts.append(aggregated_cpu_1_second)
       break
-    if line_list[1] == 'UID':
+    if line_list[2] == 'UID':
       aggregated_cpu_1_second = sum(tmp_cpu)
       skmsg_fn_cpu_ts.append(aggregated_cpu_1_second)
       tmp_cpu = [0]
     else:
-      tmp_cpu.append(float(line_list[7]))
+      tmp_cpu.append(float(line_list[8]))
     line = fp.readline()
     line_list= line.split()
     # print(tmp_cpu)
