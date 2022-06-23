@@ -1,4 +1,4 @@
-online_boutique/latency_of_each_req_stats_kn.csvimport sys
+import sys
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
